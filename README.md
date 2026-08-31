@@ -56,14 +56,14 @@ python main.py
 - `What was my busiest day this month?`
 - `Who usually attends my standups?` ← answered using RAG history
 
-### 📸 Multi-Modal — Schedule from a screenshot
+###  Multi-Modal — Schedule from a screenshot
 ```
 image /path/to/whatsapp_invite.png
 image /path/to/email_screenshot.jpg Schedule this for me
 ```
 Gemini Vision reads the image, extracts the meeting title, date, time, and attendee email, then schedules it automatically.
 
-### 🧠 RAG — Contextual scheduling
+###  RAG — Contextual scheduling
 Past calendar events (last 90 days) are indexed into a local FAISS vector store on first run.
 For every query, the 4 most relevant past meetings are retrieved and injected into the agent context, enabling smarter suggestions based on your habits.
 
